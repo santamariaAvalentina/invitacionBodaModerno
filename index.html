@@ -5,104 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#111111">
-    <meta name="description" content="Catalina y Benjamin te invitan a celebrar su boda.">
-
-    <title>Catalina & Benjamin | Nuestra boda</title>
+    <title>Catalina & Benjamin | Invitación de boda</title>
+    <meta name="description" content="Te invitamos a compartir un día muy especial con Catalina y Benjamin.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Parisienne&display=swap"
-        rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400;500&family=Parisienne&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Parisienne&display=swap"
         rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
-    <!-- PORTADA INICIAL: foto, nombres, sobre y sello -->
+
+    <!-- PORTADA -->
     <main class="portada" id="portada">
 
         <div class="portada__fondo" aria-hidden="true"></div>
         <div class="portada__sombra" aria-hidden="true"></div>
 
         <section class="portada__contenido">
-            <p class="portada__etiqueta">INVITACION ESPECIAL DE</p>
+
+            <p class="portada__etiqueta">
+                INVITACIÓN ESPECIAL DE
+            </p>
 
             <h1 class="portada__nombres">
                 <span>Catalina</span>
-                <span class="portada__y">&</span>
+                <span class="portada__y">&amp;</span>
                 <span>Benjamin</span>
             </h1>
 
-            <p class="portada__mensaje">¡Nuestra boda!</p>
+            <p class="portada__mensaje">
+                ¡Nuestra boda!
+            </p>
 
             <div class="portada__sobre">
+
                 <img class="sobre" src="assets/img/sobre-blanco.png" alt="Sobre blanco de invitación">
+
+                <span class="anillos" aria-hidden="true"></span>
 
                 <button class="sello" id="abrirInvitacion" type="button" aria-label="Abrir invitación"
                     aria-expanded="false" aria-controls="libro">
                     <img src="assets/img/sello-plateado.png" alt="">
                 </button>
+
             </div>
 
-            <p class="portada__instruccion">TOCÁ EL SELLO</p>
+            <p class="portada__instruccion">
+                TOCÁ EL SELLO
+            </p>
+
         </section>
     </main>
 
-    <!-- LIBRO: permanece oculto hasta tocar el sello -->
+
+    <!-- INVITACIÓN ABIERTA -->
     <section class="libro" id="libro" aria-label="Invitación de boda" aria-hidden="true" inert>
+
+        <button class="libro__volver" id="volverPortada" type="button" aria-label="Volver a la portada">
+            &larr;
+        </button>
+
         <div class="libro__centro">
 
-            <!-- Página izquierda -->
+            <!-- PÁGINA IZQUIERDA -->
             <article class="libro__pagina libro__pagina--izquierda">
+
                 <div class="libro__contenido">
-                    <p class="libro__etiqueta">¡Nos casamos!</p>
 
-                    <h2>Catalina</h2>
-                    <span class="libro__ampersand">&</span>
-                    <h2>Benjamin</h2>
-
-                    <div class="libro__adorno"></div>
-
-                    <p>
-                        Y no hay nada más lindo que celebrar este momento rodeados de las personas que queremos.
+                    <p class="libro__etiqueta">
+                        CON MUCHO AMOR
                     </p>
+
+                    <h2 class="libro__titulo">
+                        Catalina
+                        <span>&amp;</span>
+                        Benjamin
+                    </h2>
+
+                    <div class="libro__separador" aria-hidden="true">
+                        ✦
+                    </div>
+
+                    <p class="libro__texto">
+                        Nos llena de felicidad compartir este momento
+                        tan especial con las personas que queremos.
+                    </p>
+
+                    <p class="libro__texto">
+                        Queremos invitarlos a celebrar el comienzo
+                        de nuestra historia juntos.
+                    </p>
+
                 </div>
+
             </article>
 
-            <!-- Página derecha -->
+
+            <!-- PÁGINA DERECHA -->
             <article class="libro__pagina libro__pagina--derecha">
+
                 <div class="libro__contenido">
 
-                    <h2>¡Te invitamos!</h2>
-
-                    <div class="libro__adorno"></div>
-
-                    <p>
-
+                    <p class="libro__etiqueta">
+                        NOS CASAMOS
                     </p>
 
-                    <!-- Completaremos estos datos después -->
+                    <h2 class="libro__titulo">
+                        ¡Te esperamos!
+                    </h2>
+
                     <div class="fecha-boda">
                         <span class="fecha-boda__mes">MAYO</span>
                         <span class="fecha-boda__dia">22</span>
-                        <span class="fecha-boda__hora">20:00 P.M.</span>
+                        <span class="fecha-boda__hora">2:00 P.M.</span>
                     </div>
+
+                    <p class="libro__texto">
+                        Acompañanos a celebrar este día inolvidable.
+                    </p>
+
+                    <p class="libro__lugar">
+                        Capilla Sagrado Corazón de Jesús
+                    </p>
+
+                    <p class="libro__direccion">
+                        H. Porto 10 · Villa Carlos Paz
+                    </p>
+
                     <a class="boton-ubicacion"
-                        href="https://www.google.com/maps/search/?api=1&query=Capilla+Sagrado+Corazon+de+Jesus+Jose+H+Porto+10+Villa+Carlos+Paz"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Capilla+Sagrado+Corazon+de+Jesus+Jose+H+Porto+10+Villa+Carlos+Paz"
                         target="_blank" rel="noopener noreferrer">
                         Ver ubicación
                     </a>
+
                 </div>
+
             </article>
 
         </div>
     </section>
 
-    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
